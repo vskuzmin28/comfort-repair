@@ -1,65 +1,52 @@
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
-	// header
+	// advantages
 
-	.header {
-		position: inherit;
-		padding: 32px 0;
+	.advantages {
 		height: auto;
-		background: @blue-dark;
-
-		.logo {
-			margin: 0px 0 0 0;
-		}
-
+		background: url('../img/advantages.jpg') no-repeat center;
+		background-size: cover;
 	}
 
-	// logo
+	// list
 
-	.logo {
-		display: block;
-
-		img {
-			margin: 0 auto;
-			display: block;
-			width: 245px;
-			height: 44px;
-		}
-
-	}
-
-	// navigation
-
-	.navigation {
-		display: block;
+	.advantages__list {
+		margin-top: 50px;
+		height: auto;
 
 		ul {
 			margin: 0;
-			margin-top: 40px;
 			padding: 0;
+			list-style: none !important;
 
 			li {
+				margin-bottom: 50px;
 				float: none;
-				height: 40px;
-				list-style: none;
-				margin: 0 0px;
+				width: auto;
+				height: auto;
+				list-style: 0 !important;
 				text-align: center;
 
-				a, a:hover {
-					padding: 0 9px;
+				img {
+					//margin-right: 20px;
+					margin: 0 auto;
+					margin-bottom: 20px;
 					display: block;
-					height: 40;
-					font: 14px 'robotomedium';
-					line-height: 40px;
-					text-transform: uppercase;
-					color: @white;
-					border-bottom: 0px solid @blue-light;
+					float: none;
+					width: 70px;
+					height: 68px;
+				}
 
-					&:hover, &:focus {
-						text-decoration: underline;
-						border-color: @white;
-					}
+				span {
+					font: 18px 'robotomedium';
+					color: @blue-dark;
+				}
 
+				p {
+					width: auto;
+					float: nona;
+					font: 18px 'robotolight';
+					color: @grey;
 				}
 
 			}
@@ -67,49 +54,5 @@
 		}
 
 	}
-
-	a.navigation__link-active {
-		border-bottom: 0px solid @blue !important;
-	}
-
-	// header block contacts
-
-	.header__block-contacts {
-		margin: 16px 0 0 0 !important;
-	}
-
-	// contacts
-
-	.block-contacts {
-		margin: 0 auto !important;
-		margin-top: 30px !important;
-		width: 170px;
-		text-align: center;
-
-		p {
-			font: 18px 'robotomedium';
-			color: @white;
-		}
-
-		a, a:hover {
-			display: block;
-			font: 16px 'robotomedium';
-			color: @white;
-			text-decoration: underline;
-
-			&:hover, &:focus {
-				text-decoration: none;
-			}
-
-		}
-
-	}
-
-	// centered container
-
-	.container-small {
-		width: auto;
-	}
-
 
 }
