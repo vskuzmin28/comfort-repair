@@ -1,65 +1,48 @@
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
-	// header
+	// begin
 
-	.header {
-		position: inherit;
-		padding: 32px 0;
+	.block-begin {
 		height: auto;
-		background: @blue-dark;
+		//overflow: hidden;
+	}
 
-		.logo {
-			margin: 0px 0 0 0;
+	// title block
+
+	.title-block {
+		margin-top: 35px;
+		height: auto;
+
+		h2 {
+			font: 36px 'robotoregular';
+			color: @blue-dark;
+			text-transform: uppercase;
+			text-align: center;
 		}
 
 	}
 
-	// logo
+	// list
 
-	.logo {
-		display: block;
-
-		img {
-			margin: 0 auto;
-			display: block;
-			width: 245px;
-			height: 44px;
-		}
-
-	}
-
-	// navigation
-
-	.navigation {
-		display: block;
+	.list {
+		height: auto;
 
 		ul {
 			margin: 0;
-			margin-top: 40px;
 			padding: 0;
+			margin-top: 40px;
 
 			li {
-				float: none;
-				height: 40px;
-				list-style: none;
-				margin: 0 0px;
-				text-align: center;
+				display: block;
+				height: 80px;
+				margin-bottom: 44px;
 
-				a, a:hover {
-					padding: 0 9px;
+				p {
 					display: block;
-					height: 40;
-					font: 14px 'robotomedium';
-					line-height: 40px;
-					text-transform: uppercase;
-					color: @white;
-					border-bottom: 0px solid @blue-light;
-
-					&:hover, &:focus {
-						text-decoration: underline;
-						border-color: @white;
-					}
-
+					width: auto;
+					float: none;
+					font: 14px 'robotolight';
+					color: @blue-dark;
 				}
 
 			}
@@ -68,47 +51,52 @@
 
 	}
 
-	a.navigation__link-active {
-		border-bottom: 0px solid @blue !important;
+	.list__normal {
+		margin-top: 18px;
 	}
 
-	// header block contacts
-
-	.header__block-contacts {
-		margin: 16px 0 0 0 !important;
+	.list__small {
+		margin-top: 28px;
 	}
 
-	// contacts
+	.list__number {
+		margin-right: 24px;
+		float: left;
+		position: relative;
+		width: 80px;
+		height: 80px;
+		//background: #f00;
+	}
 
-	.block-contacts {
-		margin: 0 auto !important;
-		margin-top: 30px !important;
-		width: 170px;
+	.list__number__element {
+		width: 80px;
+		height: 80px;
+		background: @white;
+		border: 10px solid @blue-dark;
 		text-align: center;
 
-		p {
-			font: 18px 'robotomedium';
-			color: @white;
+		span {
+			display: block;
+			float: none !important;
+			font: 60px 'robotobold';
+			color: @blue;
+			line-height: 110px;
 		}
 
-		a, a:hover {
-			display: block;
-			font: 16px 'robotomedium';
-			color: @white;
-			text-decoration: underline;
+		&:hover, .list li:hover & {
+			-moz-transform: rotate(45deg);
+			background: @blue-dark;
 
-			&:hover, &:focus {
-				text-decoration: none;
+			line-height: 90px;
+
+			span {
+				-moz-transform: rotate(-45deg);
+				font: 50px 'robotobold';
+				color: @white;
 			}
 
 		}
 
-	}
-
-	// centered container
-
-	.container-small {
-		width: auto;
 	}
 
 
