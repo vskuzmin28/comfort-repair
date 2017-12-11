@@ -2,7 +2,7 @@
 
 $('.main-screen__fake-preview').click(function(e){
   e.preventDefault();
-  $("#StartVideo")[0].src += "&autoplay=1";
+  $("#startVideo")[0].src += "&autoplay=1";
   $('.main-screen__fake-preview').hide();
 })
 
