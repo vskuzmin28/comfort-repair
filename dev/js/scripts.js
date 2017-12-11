@@ -1,3 +1,13 @@
+// youtube player
+
+$('.main-screen__fake-preview').click(function(e){
+  e.preventDefault();
+  $("#StartVideo")[0].src += "&autoplay=1";
+  $('.main-screen__fake-preview').hide();
+})
+
+
+
 // call popup
 
 $('.call').click(function(){
