@@ -6,35 +6,37 @@ header.header
 
 		.row
 
-			.col-xs-12.col-sm-12.col-md-1.logo-column
-				
+			.col-xs-12.col-md-3
+
 				// logotype
 
-				.logo.wow.fadeIn
-					| М2Медиа
+				a.logo(href="#" title="")
+					img(src="../img/logo.png" alt="@@")
 
-			.col-xs-12.col-sm-12.col-md-8
+			.col-xs-12.col-md-8
 
 				// navigation
 
 				.navigation
 					ul
 						li
-							a(data-easing="easeInQuad" href="#about" title="")
-								| О нас
-							a(data-easing="easeInQuad" href="#search-screens" title="")
-								| Поиск экранов
-							a(data-easing="easeInQuad" href="#works" title="")
-								| Наши работы
-							a(data-easing="easeInQuad" href="#efficiency" title="")
-								| Эффективность
+							a.navigation__link-active(href="#" title="")
+								| Портфолио
+						li
+							a(href="#" title="")
+								| Расчёт стоимости
+						li
+							a(href="#" title="")
+								| Акции			
 
-			.col-xs-12.col-sm-12.col-md-2
+			.col-xs-12.col-md-1
 
-				// phone number
+				// block contacts
 
-				.phone-number.header__phone-number 
-					a(href="tel:88001005598" title="")
-						| 8(800) 100 55 98
-				
+				.block-contacts.header__block-contacts
+					p
+						| +7 (812) 309 98 48
+
+					a(href="#" title="")
+						| Обратный звонок!
 				

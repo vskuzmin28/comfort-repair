@@ -3,31 +3,27 @@
 	// header
 
 	.header {
-		width: auto;
+		position: inherit;
+		padding: 32px 0;
 		height: auto;
-		overflow: hidden;
-		background: @white;
+		background: @blue-dark;
+
+		.logo {
+			margin: 0px 0 0 0;
+		}
+
 	}
 
-	.header__phone-number {
-		a, a:hover {
-			line-height: 88px !important;
-		}
-	}
+	// logo
 
 	.logo {
-		margin: 20px auto;
 		display: block;
-		width: 140px;
-		height: 48px;
-		background: @blue;
-		font: 18px 'robotobold_italic';
-		line-height: 48px;
-		text-align: center;
-		color: @white;
 
-		&:hover {
-			background: @black-light;
+		img {
+			margin: 0 auto;
+			display: block;
+			width: 245px;
+			height: 44px;
 		}
 
 	}
@@ -35,41 +31,35 @@
 	// navigation
 
 	.navigation {
-		margin-left: 0px !important;
-		float: none;
-		height: auto;
-		margin: 0;
+		display: block;
 
 		ul {
+			margin: 0;
+			margin-top: 40px;
 			padding: 0;
-			-webkit-padding-start: 0;
-			height: auto;
-
 
 			li {
+				float: none;
+				height: 40px;
 				list-style: none;
+				margin: 0 0px;
+				text-align: center;
 
-			}
+				a, a:hover {
+					padding: 0 9px;
+					display: block;
+					height: 40;
+					font: 14px 'robotomedium';
+					line-height: 40px;
+					text-transform: uppercase;
+					color: @white;
+					border-bottom: 0px solid @blue-light;
 
-			li a, li a:hover {
-				padding: 0 6px;
-				display: block;
-				height: 68px;
-				font: 14px 'robotoregular';
-				color: @blue;
-				line-height: 69px;
-				text-transform: uppercase;
-				border-bottom: 1px solid @blue;
-				text-decoration: none;
-				margin-right: 0px;
+					&:hover, &:focus {
+						text-decoration: underline;
+						border-color: @white;
+					}
 
-				&:hover, &:focus {
-					border-color: @blue;
-					color: @blue;
-				}
-
-				&:last-child {
-					margin-right: 0 !important;
 				}
 
 			}
@@ -78,39 +68,48 @@
 
 	}
 
-	// phone number
+	a.navigation__link-active {
+		border-bottom: 0px solid @blue !important;
+	}
 
-	.phone-number {
-		height: auto;
+	// header block contacts
+
+	.header__block-contacts {
+		margin: 16px 0 0 0 !important;
+	}
+
+	// contacts
+
+	.block-contacts {
+		margin: 0 auto !important;
+		margin-top: 30px !important;
+		width: 170px;
+		text-align: center;
+
+		p {
+			font: 18px 'robotomedium';
+			color: @white;
+		}
 
 		a, a:hover {
 			display: block;
-			font: 18px 'robotoregular';
-			color: @blue;
-			text-decoration: none;
-			text-align: left;
+			font: 16px 'robotomedium';
+			color: @white;
+			text-decoration: underline;
 
 			&:hover, &:focus {
-				color: @black;
-				//font-family: 'robotobold';
-				//text-decoration: underline;
+				text-decoration: none;
 			}
 
 		}
 
 	}
 
-	// container small
+	// centered container
 
 	.container-small {
 		width: auto;
 	}
 
-	.logo-column {
-		width: auto;
-		margin: auto;
-		padding: auto;
-		//margin: 20px auto !important;
-	}
 
 }
