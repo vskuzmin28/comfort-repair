@@ -1,7 +1,7 @@
 {
-  "name": "m2media",
-  "version": "0.0.1",
-  "description": "landing page eronet",
+  "name": "comfort repair",
+  "version": "1.0",
+  "description": "landing page comfort repair",
   "main": "a",
   "dependencies": {
     "browser-sync": "^2.18.12",
