@@ -1,115 +1,82 @@
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
-	// header
+	// contacts
 
-	.header {
-		position: inherit;
-		padding: 32px 0;
+	.contacts {
 		height: auto;
-		background: @blue-dark;
+		padding: 0px 0 10px 0;
+	}
 
-		.logo {
-			margin: 0px 0 0 0;
+	.contacts__title-border {
+		margin: 0 auto;
+		width: 190px;
+		height: 4px;
+		background: @white;
+	}
+
+	.contacts__title-border__blue {
+		float: left;
+		width: 72px;
+		height: 4px;
+		background: @blue-dark;
+	}
+
+	.contacts__info {
+		height: auto;
+		text-align: center;
+
+		h4 {
+			font: 24px 'robotoitalic';
+			color: #202020;
+			text-transform: uppercase;
+		}
+
+		span {
+			margin-bottom: 20px;
+			margin-top: 30px;
+			display: block;
+			font: 24px 'robotoregular';
+			color: #1f1f1f;
+			text-transform: uppercase;
+		}
+
+		p {
+			margin-bottom: 30px;
+			font: 18px 'robotolight';
+			color: #1f1f1f;
+			line-height: 26px;
 		}
 
 	}
 
-	// logo
+	.contacts__inn {
+		color: @blue-dark !important;
+	}
+
+	.contacts__map {
+		height: 350px;
+		width: 100%;
+		position: relative;
+		//background: #f00;
+	}
+
+	.contacts__map__bg {
+		display: none;
+		margin: 180px 0 0 -76px;
+		position: absolute;
+		width: 440px;
+		height: 230px;
+		background: url('../img/relief.jpg') no-repeat;
+	}
+
+	.contacts__info, .contacts__map {
+		margin-top: 40px;
+	}
 
 	.logo {
 		display: block;
-
-		img {
-			margin: 0 auto;
-			display: block;
-			width: 245px;
-			height: 44px;
-		}
-
+		width: 108px;
+		height: 96px;
 	}
-
-	// navigation
-
-	.navigation {
-		display: block;
-
-		ul {
-			margin: 0;
-			margin-top: 40px;
-			padding: 0;
-
-			li {
-				float: none;
-				height: 40px;
-				list-style: none;
-				margin: 0 0px;
-				text-align: center;
-
-				a, a:hover {
-					padding: 0 9px;
-					display: block;
-					height: 40;
-					font: 14px 'robotomedium';
-					line-height: 40px;
-					text-transform: uppercase;
-					color: @white;
-					border-bottom: 0px solid @blue-light;
-
-					&:hover, &:focus {
-						text-decoration: underline;
-						border-color: @white;
-					}
-
-				}
-
-			}
-
-		}
-
-	}
-
-	a.navigation__link-active {
-		border-bottom: 0px solid @blue !important;
-	}
-
-	// header block contacts
-
-	.header__block-contacts {
-		margin: 16px 0 0 0 !important;
-	}
-
-	// contacts
-
-	.block-contacts {
-		margin: 0 auto !important;
-		margin-top: 30px !important;
-		width: 170px;
-		text-align: center;
-
-		p {
-			font: 18px 'robotomedium';
-			color: @white;
-		}
-
-		a, a:hover {
-			display: block;
-			font: 16px 'robotomedium';
-			color: @white;
-			text-decoration: underline;
-
-			&:hover, &:focus {
-				text-decoration: none;
-			}
-
-		}
-
-	}
-
-	// centered container
-
-	.container-small {
-		width: auto;
-	}
-
 
 }
