@@ -1,0 +1,116 @@
+@media only screen and (min-width : @mobile) and  (max-width : @desktop) {
+
+	// header
+
+	.header {
+		width: auto;
+		height: auto;
+		overflow: hidden;
+		background: @white;
+	}
+
+	.header__phone-number {
+		a, a:hover {
+			line-height: 88px !important;
+		}
+	}
+
+	.logo {
+		margin: 20px auto;
+		display: block;
+		width: 140px;
+		height: 48px;
+		background: @blue;
+		font: 18px 'robotobold_italic';
+		line-height: 48px;
+		text-align: center;
+		color: @white;
+
+		&:hover {
+			background: @black-light;
+		}
+
+	}
+
+	// navigation
+
+	.navigation {
+		margin-left: 0px !important;
+		float: none;
+		height: auto;
+		margin: 0;
+
+		ul {
+			padding: 0;
+			-webkit-padding-start: 0;
+			height: auto;
+
+
+			li {
+				list-style: none;
+
+			}
+
+			li a, li a:hover {
+				padding: 0 6px;
+				display: block;
+				height: 68px;
+				font: 14px 'robotoregular';
+				color: @blue;
+				line-height: 69px;
+				text-transform: uppercase;
+				border-bottom: 1px solid @blue;
+				text-decoration: none;
+				margin-right: 0px;
+
+				&:hover, &:focus {
+					border-color: @blue;
+					color: @blue;
+				}
+
+				&:last-child {
+					margin-right: 0 !important;
+				}
+
+			}
+
+		}
+
+	}
+
+	// phone number
+
+	.phone-number {
+		height: auto;
+
+		a, a:hover {
+			display: block;
+			font: 18px 'robotoregular';
+			color: @blue;
+			text-decoration: none;
+			text-align: left;
+
+			&:hover, &:focus {
+				color: @black;
+				//font-family: 'robotobold';
+				//text-decoration: underline;
+			}
+
+		}
+
+	}
+
+	// container small
+
+	.container-small {
+		width: auto;
+	}
+
+	.logo-column {
+		width: auto;
+		margin: auto;
+		padding: auto;
+		//margin: 20px auto !important;
+	}
+
+}

@@ -1,0 +1,108 @@
+@media only screen and (min-width : @desktop) {
+
+	// header
+
+	.header {
+		height: 88px;
+		overflow: hidden;
+		background: @white;
+	}
+
+	.header__phone-number {
+		a, a:hover {
+			line-height: 88px !important;
+		}
+	}
+
+	.logo {
+		margin-top: 18px;
+		width: 140px;
+		height: 48px;
+		background: @blue;
+		font: 18px 'robotobold_italic';
+		line-height: 48px;
+		text-align: center;
+		color: @white;
+
+		&:hover {
+			background: @black-light;
+		}
+
+	}
+
+	// navigation
+
+	.navigation {
+		margin-left: 30px;
+		height: 88px;
+
+		ul {
+			-webkit-padding-start: 0;
+			height: auto;
+
+
+			li {
+				list-style: none;
+
+			}
+
+			li a, li a:hover {
+				padding: 0 6px;
+				display: inline-block;
+				height: 88px;
+				font: 14px 'robotoregular';
+				color: @black-light;
+				line-height: 89px;
+				text-transform: uppercase;
+				border-bottom: 4px solid @white;
+				text-decoration: none;
+				margin-right: 40px;
+
+				&:hover, &:focus {
+					border-color: @blue;
+					color: @blue;
+				}
+
+				&:last-child {
+					margin-right: 0 !important;
+				}
+
+			}
+
+		}
+
+	}
+
+	// phone number
+
+	.phone-number {
+		height: auto;
+
+		a, a:hover {
+			display: block;
+			font: 18px 'robotoregular';
+			color: @blue;
+			text-decoration: none;
+			text-align: right;
+
+			&:hover, &:focus {
+				color: @black-light;
+				//font-family: 'robotobold';
+				//text-decoration: underline;
+			}
+
+		}
+
+	}
+
+	// container small
+
+	.container-small {
+		width: 1040px !important;
+	}
+
+	.logo-column {
+		width: 140px !important;
+	}
+
+}
