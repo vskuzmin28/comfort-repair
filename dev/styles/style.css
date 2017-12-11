@@ -30,28 +30,34 @@ a {
 .right {
   float: right;
 }
+.link-bold {
+  display: inline-block;
+  height: 46px;
+  font: 20px 'robotomedium';
+  color: #1b3459;
+  line-height: 46px;
+  text-decoration: underline;
+}
+.link-bold:hover {
+  color: #159cd8;
+}
 .button-blue {
-  display: block;
-  width: 177px;
-  height: 37px;
-  background-image: -webkit-gradient(linear, 175 0, 0 0, color-stop(0.302, #45ace3), color-stop(0.731, #0086ce));
-  background-image: -webkit-linear-gradient(180deg, #45ace3 30.2%, #0086ce 73.1%);
-  background-image: -moz-linear-gradient(180deg, #45ace3 30.2%, #0086ce 73.1%);
-  background-image: -o-linear-gradient(180deg, #45ace3 30.2%, #0086ce 73.1%);
-  background-image: linear-gradient(270deg, #45ace3 30.2%, #0086ce 73.1%);
+  padding: 0 40px;
+  display: inline-block;
+  height: 46px;
+  background: #1b3459;
+  border-radius: 2px;
   font: 12px 'robotomedium';
   color: #fff;
+  line-height: 46px;
   text-transform: uppercase;
-  text-align: center;
-  line-height: 37px;
-  border-radius: 6px;
 }
 .button-blue:hover,
 .button-blue:focus {
-  background: #000;
+  background: #159cd8;
   color: #fff;
   font-family: 'robotobold';
-  border-radius: 6px;
+  border-radius: 4px;
   text-decoration: none;
 }
 .button-transparent {
@@ -416,7 +422,10 @@ a {
 }
 @media only screen and (min-width: 1100px) {
   .block-begin {
+    padding-bottom: 66px;
     height: auto;
+    background: url('../img/block-begin.jpg') no-repeat center;
+    background-size: cover;
   }
   .title-block {
     margin-top: 35px;
@@ -435,6 +444,7 @@ a {
     margin: 0;
     padding: 0;
     margin-top: 40px;
+    margin-bottom: 45px;
   }
   .list ul li {
     display: block;
@@ -486,10 +496,21 @@ a {
     font: 50px 'robotobold';
     color: #fff;
   }
+  .block-begin__detail {
+    margin: 0 auto;
+    width: 550px;
+    height: auto;
+  }
+  .block-begin__detail__link {
+    float: right;
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 1100px) {
   .block-begin {
+    height: 838px;
     height: auto;
+    padding-bottom: 30px;
+    background: url('../img/block-begin.jpg') no-repeat center;
   }
   .title-block {
     margin-top: 35px;
@@ -559,6 +580,22 @@ a {
     -moz-transform: rotate(-45deg);
     font: 50px 'robotobold';
     color: #fff;
+  }
+  .block-begin__detail {
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+  }
+  .block-begin__detail a,
+  .block-begin__detail a:hover {
+    width: 300px;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto !important;
+    margin-bottom: 20px;
+  }
+  .block-begin__detail__link {
+    float: none;
   }
 }
 @media only screen and (min-width: 1100px) {
