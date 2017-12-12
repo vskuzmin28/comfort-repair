@@ -1,42 +1,35 @@
-header.header
+// вызвать замерщика (для кнопки под замер)
 
-	// container
+h4
+	| Вызвать замерщика
 
-	.container.container-small
+p
+	| Для того чтобы узнаит точную стоимость работ пригласите нашего замерщика БЕСПЛАТНО:- Он приедет в удобное Вам время- Произведет все необходимые замеры- Проконсультирует Вас по всем вопросам
 
-		.row
+form(action="/" method="post")
+	input(type="text" placeholder="Введите Ваше имя")
+	input(type="text" placeholder="Введите Ваш телефон")
+	input(type="submit" value="Вызвать замерщика")
 
-			.col-xs-12.col-md-3
+// Заказать звонок (Оставить заявку, консультация менеджера)
 
-				// logotype
+h4
+	| Заказать звонок
 
-				a.logo(href="#" title="")
-					img(src="../img/logo.png" alt="@@")
+form(action="/" method="post")
+	input(type="text" placeholder="Введите Ваше имя")
+	input(type="text" placeholder="Введите Ваш телефон")
+	input(type="submit" value="Заказать")
 
-			.col-xs-12.col-md-8
+// Сделайте заказ (для акций)
 
-				// navigation
+h4
+	| Сделайте заказ
 
-				.navigation
-					ul
-						li
-							a.navigation__link-active(href="#" title="")
-								| Портфолио
-						li
-							a(href="#" title="")
-								| Расчёт стоимости
-						li
-							a(href="#" title="")
-								| Акции			
+p
+	| прямо сейчас
 
-			.col-xs-12.col-md-1
-
-				// block contacts
-
-				.block-contacts.header__block-contacts
-					p
-						| +7 (812) 309 98 48
-
-					a(href="#" title="")
-						| Обратный звонок!
-				
+form(action="/" method="post")
+	input(type="text" placeholder="Введите Ваше имя")
+	input(type="text" placeholder="Введите Ваш телефон")
+	input(type="submit" value="Перезвоните мне")
