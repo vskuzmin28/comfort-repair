@@ -1,16 +1,81 @@
 .reviews
 
-	// container
+	// title block
 
-	.container.container-small
-
-		.row
-
-			.col-xs-12.col-md-12
-
-				// title block
-
-				.title-block
+	.title-block
 
 					h2
-						| 111
+						| Отзывы клиентов
+
+					.title-block__line
+
+
+	// reviews slider
+
+	.reviews-slider
+
+					ul.reviews-banner#reviews-block
+
+						// item
+
+						li
+
+							// reviews slider content
+
+							.reviews-slider__content
+
+								// reivews slider content author
+
+								.reviews-slider__content__author
+									img(src="../img/author.png" alt="@@")
+									span
+										| Иван Иванов
+									p
+										| Двухкомнатная квартира
+
+								p.review-content
+									| Обратилась в компанию «Комфорт Ремонт» в апреле 2017 года по поводу ремонта 1 к. кв. в новостройке "с нуля" (Богатырский пр. 49/1). Данную компанию нашла самостоятельно, через интернет. После замера, через день, мне прислали подробно составленную смету...
+
+								a.review-show(href="#" title="")
+									| Читать весь отзыв
+
+								p.review-full
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.
+
+							.review-slider__example
+								.review-slider__example__background
+								img(src="../img/repair.jpg" alt="@@")
+
+						// / item
+
+						// item
+
+						li
+
+							// reviews slider content
+
+							.reviews-slider__content
+
+								// reivews slider content author
+
+								.reviews-slider__content__author
+									img(src="../img/author.png" alt="@@")
+									span
+										| Федор Анисимов
+									p
+										| Трехкомнатная квартира
+
+								p.review-content
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+								a.review-show(href="#" title="")
+									| Читать весь отзыв
+
+								p.review-full
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.
+
+							.review-slider__example
+								.review-slider__example__background
+								img(src="../img/repair.jpg" alt="@@")
+
+						// / item

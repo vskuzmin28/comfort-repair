@@ -19,6 +19,8 @@ $('.call').click(function(){
     }); 
 });
 
+// functional call form
+
 $('.send-form').submit(function() {
       $.post($(this).attr('action'), $(this).serialize(), function(res) {         
      if (res.success == 1) {
@@ -39,6 +41,37 @@ $('.send-form').submit(function() {
 
 var easeInQuad = new SmoothScroll('[data-easing="easeInQuad"]', {easing: 'easeInQuad'});
 
-// wow animate
+// wow animate elements
 
 new WOW().init();
+
+// sliders
+
+$('#reviews-block').responsiveSlides({
+  auto: false,
+  pager: false,
+  nav: true,
+  speed: 500,
+  maxwidth: 1040,
+  namespace: "centered-controls"
+});
+
+
+
+$('#small-banner').responsiveSlides({
+  auto: true,
+  pager: true,
+  nav: true,
+  speed: 500,
+  maxwidth: 870,
+  namespace: "small-banners"
+});
+
+
+// view full review in slider
+
+$('.review-show').click(function(e){
+  e.preventDefault();
+  $('.review-full').toggle();
+  $('.review-show').hide();
+})

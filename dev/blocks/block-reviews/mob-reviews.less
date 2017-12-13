@@ -1,115 +1,249 @@
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
-	// header
+	// reviews
 
-	.header {
-		position: inherit;
-		padding: 32px 0;
-		height: auto;
-		background: @blue-dark;
-
-		.logo {
-			margin: 0px 0 0 0;
-		}
-
-	}
-
-	// logo
-
-	.logo {
-		display: block;
-
-		img {
-			margin: 0 auto;
-			display: block;
-			width: 245px;
-			height: 44px;
-		}
-
-	}
-
-	// navigation
-
-	.navigation {
-		display: block;
-
-		ul {
-			margin: 0;
-			margin-top: 40px;
-			padding: 0;
-
-			li {
-				float: none;
-				height: 40px;
-				list-style: none;
-				margin: 0 0px;
-				text-align: center;
-
-				a, a:hover {
-					padding: 0 9px;
-					display: block;
-					height: 40;
-					font: 14px 'robotomedium';
-					line-height: 40px;
-					text-transform: uppercase;
-					color: @white;
-					border-bottom: 0px solid @blue-light;
-
-					&:hover, &:focus {
-						text-decoration: underline;
-						border-color: @white;
-					}
-
-				}
-
-			}
-
-		}
-
-	}
-
-	a.navigation__link-active {
-		border-bottom: 0px solid @blue !important;
-	}
-
-	// header block contacts
-
-	.header__block-contacts {
-		margin: 16px 0 0 0 !important;
-	}
-
-	// contacts
-
-	.block-contacts {
-		margin: 0 auto !important;
-		margin-top: 30px !important;
-		width: 170px;
-		text-align: center;
-
-		p {
-			font: 18px 'robotomedium';
-			color: @white;
-		}
-
-		a, a:hover {
-			display: block;
-			font: 16px 'robotomedium';
-			color: @white;
-			text-decoration: underline;
-
-			&:hover, &:focus {
-				text-decoration: none;
-			}
-
-		}
-
-	}
-
-	// centered container
-
-	.container-small {
+	.reviews {
 		width: auto;
+		margin: 0 auto;
+		height: auto;
+
 	}
 
+	.title-block__line {
+		margin: 0 auto;
+		width: 74px;
+		height: 4px;
+		background: @blue-dark;
+	}
+
+	// main slider
+
+	.reviews-slider {
+		//height: 464px;
+		position: relative;
+		//background: #e2ecf5;
+		//overflow: hidden;
+		//margin-bottom: 108px;
+		z-index: 888;
+	}
+
+  	& .prev {
+  		top: 20px;
+  		left: 5%;
+  		margin-left: 0;
+  		position: absolute;
+  		display: block;
+  		width: 24px;
+  		height: 47px;
+  		overflow: hidden;
+  		text-indent: -9999px;
+  		background: url('../img/arrow.png') no-repeat;
+  		-moz-transform: rotate(180deg);
+  		//border: 1px solid @white;
+  		z-index: 888;
+
+  		&:hover {
+  			border-color: @black;
+  		}
+
+  	}
+
+  	& .next {
+  		top: 20px;
+  		//left: 77.8%;
+  		right: 5%;
+  		margin-left: 0%;
+  		position: absolute;
+  		display: block;
+  		width: 24px;
+  		height: 47px;
+  		overflow: hidden;
+  		text-indent: -9999px;
+  		background: url('../img/arrow.png') no-repeat center;
+  		//border: 1px solid @white;
+  		z-index: 99999;
+
+  		&:hover {
+  			background: url('../img/arrow.png') no-repeat center;
+  			border-color: @black;
+  		}
+
+  	}
+
+  	.reviews-banner {
+  		margin: 84px 0 30px 0;
+  		height: auto;
+  		width: 100%;
+  		overflow: hidden;
+
+  		ul {
+  			list-style: none;
+  		}
+
+  		//height: 100px !important;
+
+  		li {
+   			margin: 0;
+   			padding: 0;
+   			margin-left: -10px;
+  			//background: #f00 !important;
+  			list-style: none;
+  			float: left;
+  			width: auto;
+  			height: auto;
+
+  			a, a:hover {
+  				display: block;
+  				//width: 100%;
+  				//height: 396px;
+
+				img {
+					float: none;
+  					display: block;
+  					margin: 0 auto;
+  					width: 100% !important;
+  					height: auto !important;
+  				}
+
+  			}
+
+  		}
+
+  	}
+
+  	.centered-controls_tabs {
+  		margin-top: 260px;
+  		position: absolute;
+  		width: 210px;
+  		background: 0;
+  		z-index: 99;
+  		left: 50%;
+  		margin-left: -7%;
+
+  		li {
+
+  			list-style: none;
+  			float: left;
+  			//margin-left: -330px !important;
+
+  			a, a:hover {
+  				display: block;
+  				width: 10px;
+  				height: 10px;
+  				background: 0;
+  				border: 1px solid @white;
+  				border-radius: 50%;
+  				overflow: hidden;
+  				text-indent: -9999px;
+  			}
+
+  			&:last-child {
+  				margin-right: 0;
+  			}
+
+  		}
+
+  	}
+
+  	.centered-controls_here {
+  		background: #fff;
+  		border-radius: 50%;
+  	}
+
+  	// reviews slider content
+
+	.reviews-slider__content {
+		margin-right: 60px;
+  		float: none;
+  		width: auto;
+  		height: auto;
+  		overflow: hidden;
+
+  		p {
+  			font: 18px 'robotolight';
+  			color: #4e4e4e;
+  		}
+
+  	}
+
+  	.reviews-slider__content__author {
+  		margin-left: 8%;
+  		margin-bottom: 30px;
+  		height: 80px;
+  		overflow: hidden;
+
+  		img {
+  			display: block;
+  			float: left;
+  			width: 80px;
+  			height: 80px;
+  			border-radius: 50%;
+  			margin-right: 36px;
+  		}
+
+  		span {
+  			margin-top: 16px;
+  			display: block;
+  			font: 20px 'robotomedium';
+  			color: @blue-dark;
+  		}
+
+  		p {
+  			margin-top: 2px;
+  			font: 18px 'robotoregular';
+  			color: @black;
+  		}
+
+  	}
+
+  	.review-show {
+  		margin-top: 20px;
+  		display: block;
+  		font: 18px 'robotomedium';
+  		color: @blue-dark;
+  		text-decoration: underline;
+
+  		&:hover {
+  			color: @blue;
+  		}
+
+  	}
+
+  	.review-full {
+  		display: none;
+  	}
+
+  	.review-slider__example {
+  		margin: 0;
+  		padding: 0;
+  		position: relative;
+		float: none;
+  		display: block;
+  		margin: 0 auto;
+  		width: 100% !important;
+  		height: auto !important;
+  		overflow: hidden;
+
+  		img {
+  			margin: 30px 0 0 0%;
+  			position: relative !important;
+  			display: block;
+  			width: 90% !important;
+  			height: auto !important;
+  			//z-index: 5;
+  		}
+
+  	}
+
+  	.review-slider__example__background {
+  		display: none;
+  		left: -75px;
+  		bottom: -525px;
+  		position: absolute;
+  		z-index: 3;
+  		width: 440px;
+  		height: 240px;
+  		background: url('../img/relief.jpg') no-repeat;
+  	}
 
 }
