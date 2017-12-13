@@ -1,42 +1,67 @@
-header.header
+.actions
 
-	// container
+	// title block
 
-	.container.container-small
+	.title-block
 
-		.row
+					h2
+						| Акции
 
-			.col-xs-12.col-md-3
+					.title-block__line
 
-				// logotype
 
-				a.logo(href="#" title="")
-					img(src="../img/logo.png" alt="@@")
+	// actions slider
 
-			.col-xs-12.col-md-8
+	.actions-slider
 
-				// navigation
+					ul.actions-banner#actions-block
 
-				.navigation
-					ul
+						// item
+
 						li
-							a.navigation__link-active(href="#" title="")
-								| Портфолио
+
+							// actions slider content
+
+							.actions-slider__content
+
+								h4
+									| Скидка на дизайн в скандинавском стиле
+
+								.title-block__line.no-margin
+
+								p.actions-content
+									| Скидка 15% на разработку дизайн-проекта в скандинавском стиле
+
+								a.button-blue.actions-slider__content__button(href="#" title="")
+									| Воспользоваться акцией
+
+							.actions-slider__example
+								.actions-slider__example__background
+								img(src="../img/action.jpg" alt="@@")
+
+						// / item
+
+						// item
+
 						li
-							a(href="#" title="")
-								| Расчёт стоимости
-						li
-							a(href="#" title="")
-								| Акции			
 
-			.col-xs-12.col-md-1
+							// actions slider content
 
-				// block contacts
+							.actions-slider__content
 
-				.block-contacts.header__block-contacts
-					p
-						| +7 (812) 309 98 48
+								h4
+									| Скидка на дизайн в скандинавском стиле
 
-					a(href="#" title="")
-						| Обратный звонок!
-				
+								.title-block__line.no-margin
+
+								p.actions-content
+									| Скидка 15% на разработку дизайн-проекта в скандинавском стиле
+
+								a.button-blue.actions-slider__content__button(href="#" title="")
+									| Воспользоваться акцией
+
+							.actions-slider__example
+								.actions-slider__example__background
+								img(src="../img/action.jpg" alt="@@")
+
+						// / item

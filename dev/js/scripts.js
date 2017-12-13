@@ -58,13 +58,13 @@ $('#reviews-block').responsiveSlides({
 
 
 
-$('#small-banner').responsiveSlides({
-  auto: true,
-  pager: true,
+$('#actions-block').responsiveSlides({
+  auto: false,
+  pager: false,
   nav: true,
   speed: 500,
-  maxwidth: 870,
-  namespace: "small-banners"
+  maxwidth: 1040,
+  namespace: "centered-controls"
 });
 
 
