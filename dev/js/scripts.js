@@ -47,7 +47,9 @@ new WOW().init();
 
 // sliders
 
-$('#reviews-block').responsiveSlides({
+// portfolio
+
+$('.portfolio-block').responsiveSlides({
   auto: false,
   pager: false,
   nav: true,
@@ -56,9 +58,9 @@ $('#reviews-block').responsiveSlides({
   namespace: "centered-controls"
 });
 
+// actions
 
-
-$('#actions-block').responsiveSlides({
+$('.actions-block').responsiveSlides({
   auto: false,
   pager: false,
   nav: true,
@@ -67,6 +69,16 @@ $('#actions-block').responsiveSlides({
   namespace: "centered-controls"
 });
 
+// reviews
+
+$('.reviews-block').responsiveSlides({
+  auto: false,
+  pager: false,
+  nav: true,
+  speed: 500,
+  maxwidth: 1040,
+  namespace: "centered-controls"
+});
 
 // view full review in slider
 

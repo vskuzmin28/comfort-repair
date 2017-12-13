@@ -1,42 +1,67 @@
-header.header
+.portfolio
 
-	// container
+	// title block
 
-	.container.container-small
+	.title-block
 
-		.row
+					h2
+						| Наше портфолио
 
-			.col-xs-12.col-md-3
+					.title-block__line
 
-				// logotype
 
-				a.logo(href="#" title="")
-					img(src="../img/logo.png" alt="@@")
+	// portfolio slider
 
-			.col-xs-12.col-md-8
+	.portfolio-slider
 
-				// navigation
+					ul.portfolio-banner.portfolio-block
 
-				.navigation
-					ul
+						// item
+
 						li
-							a.navigation__link-active(href="#" title="")
-								| Портфолио
+
+							// portfolio slider content
+
+							.portfolio-slider__content
+
+								h4
+									| Двухкомнатная квартира
+
+								.title-block__line.no-margin
+
+								p.portfolio-content
+									| Скидка 15% на разработку дизайн-проекта в скандинавском стиле
+
+								a.button-blue.portfolio-slider__content__button(href="#" title="")
+									| Воспользоваться акцией
+
+							.portfolio-slider__example
+								.portfolio-slider__example__background
+								img(src="../img/action.jpg" alt="@@")
+
+						// / item
+
+						// item
+
 						li
-							a(href="#" title="")
-								| Расчёт стоимости
-						li
-							a(href="#" title="")
-								| Акции			
 
-			.col-xs-12.col-md-1
+							// portfolio slider content
 
-				// block contacts
+							.portfolio-slider__content
 
-				.block-contacts.header__block-contacts
-					p
-						| +7 (812) 309 98 48
+								h4
+									| Скидка на дизайн в скандинавском стиле
 
-					a(href="#" title="")
-						| Обратный звонок!
-				
+								.title-block__line.no-margin
+
+								p.portfolio-content
+									| Скидка 15% на разработку дизайн-проекта в скандинавском стиле
+
+								a.button-blue.portfolio-slider__content__button(href="#" title="")
+									| Воспользоваться акцией
+
+							.portfolio-slider__example
+								.portfolio-slider__example__background
+								img(src="../img/action.jpg" alt="@@")
+
+						// / item
