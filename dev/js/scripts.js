@@ -55,7 +55,18 @@ $('.portfolio-block').responsiveSlides({
   nav: true,
   speed: 500,
   maxwidth: 1040,
-  namespace: "centered-controls"
+  //namespace: "centered-controls"
+});
+
+// works
+
+$('.works-block').responsiveSlides({
+  auto: false,
+  pager: true,
+  nav: true,
+  speed: 500,
+  maxwidth: 514,
+  namespace: "works-controls"
 });
 
 // actions
@@ -66,7 +77,7 @@ $('.actions-block').responsiveSlides({
   nav: true,
   speed: 500,
   maxwidth: 1040,
-  namespace: "centered-controls"
+  //namespace: "centered-controls"
 });
 
 // reviews
@@ -77,7 +88,7 @@ $('.reviews-block').responsiveSlides({
   nav: true,
   speed: 500,
   maxwidth: 1040,
-  namespace: "centered-controls"
+  //namespace: "centered-controls"
 });
 
 // view full review in slider
