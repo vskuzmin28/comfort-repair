@@ -47,20 +47,24 @@ a {
 .button-blue {
   padding: 0 40px;
   display: inline-block;
-  height: 46px;
+  height: 48px;
   background: #1b3459;
   border-radius: 2px;
-  font: 12px 'robotomedium';
+  font: 16px 'robotomedium';
   color: #fff;
-  line-height: 46px;
+  line-height: 48px;
   text-transform: uppercase;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 7px 25px -7px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 0px 7px 25px -7px rgba(0, 0, 0, 0.53);
+  box-shadow: 0px 7px 25px -7px rgba(0, 0, 0, 0.53);
 }
 .button-blue:hover,
 .button-blue:focus {
   background: #159cd8;
   color: #fff;
   font-family: 'robotobold';
-  border-radius: 4px;
+  border-radius: 25px;
   text-decoration: none;
 }
 .button-transparent {
@@ -177,7 +181,6 @@ a {
     float: left;
     width: 400px;
     height: auto;
-    overflow: hidden;
   }
   .actions-slider__content h4 {
     display: block;
@@ -541,7 +544,6 @@ a {
 @media only screen and (min-width: 1100px) {
   .block-begin {
     padding-top: 80px;
-    padding-bottom: 66px;
     height: auto;
     background: url('../img/block-begin.jpg') no-repeat center;
     background-size: cover;
@@ -619,6 +621,7 @@ a {
     margin: 0 auto;
     width: 550px;
     height: auto;
+    padding-bottom: 66px;
   }
   .block-begin__detail__link {
     float: right;
@@ -716,137 +719,6 @@ a {
   }
   .block-begin__detail__link {
     float: none;
-  }
-}
-@media only screen and (min-width: 1100px) {
-  .contacts {
-    height: auto;
-    padding: 60px 0 130px 0;
-  }
-  .contacts__title-border {
-    margin: 0 auto;
-    width: 190px;
-    height: 4px;
-    background: #fff;
-  }
-  .contacts__title-border__blue {
-    float: left;
-    width: 72px;
-    height: 4px;
-    background: #1b3459;
-  }
-  .contacts__info {
-    height: auto;
-  }
-  .contacts__info h4 {
-    font: 24px 'robotoitalic';
-    color: #202020;
-    text-transform: uppercase;
-  }
-  .contacts__info span {
-    margin-bottom: 20px;
-    margin-top: 30px;
-    display: block;
-    font: 24px 'robotoregular';
-    color: #1f1f1f;
-    text-transform: uppercase;
-  }
-  .contacts__info p {
-    margin-bottom: 30px;
-    font: 18px 'robotolight';
-    color: #1f1f1f;
-    line-height: 26px;
-  }
-  .contacts__inn {
-    color: #1b3459 !important;
-  }
-  .contacts__map {
-    height: 410px;
-    width: 100%;
-    position: relative;
-  }
-  .contacts__map__bg {
-    margin: 180px 0 0 -76px;
-    position: absolute;
-    width: 440px;
-    height: 230px;
-    background: url('../img/relief.jpg') no-repeat;
-  }
-  .contacts__info,
-  .contacts__map {
-    margin-top: 40px;
-  }
-  .logo-contacts {
-    display: block;
-    width: 108px;
-    height: 96px;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 1100px) {
-  .contacts {
-    height: auto;
-    padding: 0px 0 10px 0;
-  }
-  .contacts__title-border {
-    margin: 0 auto;
-    width: 190px;
-    height: 4px;
-    background: #fff;
-  }
-  .contacts__title-border__blue {
-    float: left;
-    width: 72px;
-    height: 4px;
-    background: #1b3459;
-  }
-  .contacts__info {
-    height: auto;
-    text-align: center;
-  }
-  .contacts__info h4 {
-    font: 24px 'robotoitalic';
-    color: #202020;
-    text-transform: uppercase;
-  }
-  .contacts__info span {
-    margin-bottom: 20px;
-    margin-top: 30px;
-    display: block;
-    font: 24px 'robotoregular';
-    color: #1f1f1f;
-    text-transform: uppercase;
-  }
-  .contacts__info p {
-    margin-bottom: 30px;
-    font: 18px 'robotolight';
-    color: #1f1f1f;
-    line-height: 26px;
-  }
-  .contacts__inn {
-    color: #1b3459 !important;
-  }
-  .contacts__map {
-    height: 350px;
-    width: 100%;
-    position: relative;
-  }
-  .contacts__map__bg {
-    display: none;
-    margin: 180px 0 0 -76px;
-    position: absolute;
-    width: 440px;
-    height: 230px;
-    background: url('../img/relief.jpg') no-repeat;
-  }
-  .contacts__info,
-  .contacts__map {
-    margin-top: 40px;
-  }
-  .logo-contacts {
-    margin: 0 auto;
-    display: block;
-    width: 108px;
-    height: 96px;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -1011,6 +883,137 @@ a {
   }
   .container-small {
     width: auto;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .contacts {
+    height: auto;
+    padding: 60px 0 130px 0;
+  }
+  .contacts__title-border {
+    margin: 0 auto;
+    width: 190px;
+    height: 4px;
+    background: #fff;
+  }
+  .contacts__title-border__blue {
+    float: left;
+    width: 72px;
+    height: 4px;
+    background: #1b3459;
+  }
+  .contacts__info {
+    height: auto;
+  }
+  .contacts__info h4 {
+    font: 24px 'robotoitalic';
+    color: #202020;
+    text-transform: uppercase;
+  }
+  .contacts__info span {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    display: block;
+    font: 24px 'robotoregular';
+    color: #1f1f1f;
+    text-transform: uppercase;
+  }
+  .contacts__info p {
+    margin-bottom: 30px;
+    font: 18px 'robotolight';
+    color: #1f1f1f;
+    line-height: 26px;
+  }
+  .contacts__inn {
+    color: #1b3459 !important;
+  }
+  .contacts__map {
+    height: 410px;
+    width: 100%;
+    position: relative;
+  }
+  .contacts__map__bg {
+    margin: 180px 0 0 -76px;
+    position: absolute;
+    width: 440px;
+    height: 230px;
+    background: url('../img/relief.jpg') no-repeat;
+  }
+  .contacts__info,
+  .contacts__map {
+    margin-top: 40px;
+  }
+  .logo-contacts {
+    display: block;
+    width: 108px;
+    height: 96px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1100px) {
+  .contacts {
+    height: auto;
+    padding: 0px 0 10px 0;
+  }
+  .contacts__title-border {
+    margin: 0 auto;
+    width: 190px;
+    height: 4px;
+    background: #fff;
+  }
+  .contacts__title-border__blue {
+    float: left;
+    width: 72px;
+    height: 4px;
+    background: #1b3459;
+  }
+  .contacts__info {
+    height: auto;
+    text-align: center;
+  }
+  .contacts__info h4 {
+    font: 24px 'robotoitalic';
+    color: #202020;
+    text-transform: uppercase;
+  }
+  .contacts__info span {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    display: block;
+    font: 24px 'robotoregular';
+    color: #1f1f1f;
+    text-transform: uppercase;
+  }
+  .contacts__info p {
+    margin-bottom: 30px;
+    font: 18px 'robotolight';
+    color: #1f1f1f;
+    line-height: 26px;
+  }
+  .contacts__inn {
+    color: #1b3459 !important;
+  }
+  .contacts__map {
+    height: 350px;
+    width: 100%;
+    position: relative;
+  }
+  .contacts__map__bg {
+    display: none;
+    margin: 180px 0 0 -76px;
+    position: absolute;
+    width: 440px;
+    height: 230px;
+    background: url('../img/relief.jpg') no-repeat;
+  }
+  .contacts__info,
+  .contacts__map {
+    margin-top: 40px;
+  }
+  .logo-contacts {
+    margin: 0 auto;
+    display: block;
+    width: 108px;
+    height: 96px;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -1548,7 +1551,6 @@ a {
     width: 1040px;
     margin: 0 auto;
     height: auto;
-    overflow: hidden;
   }
   .title-block__line {
     margin: 0 auto;
