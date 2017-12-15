@@ -4,17 +4,17 @@
 
 	.title-block
 
-					h2.wow.fadeInDown
-						| Наше портфолио
+		h2.wow.fadeInDown
+			| Наше портфолио
 
-					.title-block__line
+		.title-block__line
 
 
 	// portfolio slider
 
 	.portfolio-slider
 
-					ul.portfolio-banner.portfolio-block
+		ul.portfolio-banner.portfolio-block
 
 						// item
 
@@ -29,8 +29,36 @@
 
 								.title-block__line.no-margin
 
-								p.portfolio-content
-									| Скидка 15% на разработку дизайн-проекта в скандинавском стиле
+								// list
+
+								ul.portfolio-list
+
+									// item
+
+									li.wow.fadeInLeft
+										img(src="../img/icons/icon-1.png" alt="@@")
+										p
+											| Стоимость работ:
+										span
+											| 1 000 000р
+
+									// item
+
+									li.wow.fadeInRight
+										img(src="../img/icons/icon-2.png" alt="@@")
+										p
+											| Сроки выполнения: 
+										span
+											| 3 месяца					
+
+									// item
+
+									li.wow.fadeInLeft
+										img(src="../img/icons/icon-3.png" alt="@@")
+										p
+											| Площадь:
+										span
+											| 100 м2:								
 
 							.portfolio-slider__example
 
@@ -44,6 +72,7 @@
 
 										li
 											a(data-fancybox="gallery" href="../img/work.jpg" title="")
+												.works-mask
 												img(src="../img/work.jpg" alt="@@")
 
 										// / item
@@ -52,6 +81,7 @@
 
 										li
 											a(data-fancybox="gallery" href="../img/work.jpg" title="")
+												.works-mask
 												img(src="../img/work.jpg" alt="@@")
 
 										// / item
@@ -60,6 +90,7 @@
 
 										li
 											a(data-fancybox="gallery" href="../img/work.jpg" title="")
+												.works-mask
 												img(src="../img/work.jpg" alt="@@")
 
 										// / item
@@ -68,6 +99,7 @@
 
 										li
 											a(data-fancybox="gallery" href="../img/work.jpg" title="")
+												.works-mask
 												img(src="../img/work.jpg" alt="@@")
 
 										// / item

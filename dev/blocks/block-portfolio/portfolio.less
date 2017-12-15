@@ -2,12 +2,20 @@
 
 	// portfolio
 
+	.portfolio-bg {
+		height: auto;
+		background: url('/img/portfolio-bg.jpg') no-repeat center;
+		width: 100%;
+	}
+
 	.portfolio {
 		padding-top: 80px;
 		padding-bottom: 80px;
 		width: 1040px;
 		margin: 0 auto;
 		height: auto;
+		overflow: hidden;
+		//background: url('/img/portfolio-bg.jpg') no-repeat center;
 
 	}
 
@@ -373,6 +381,60 @@
   			background: #1b3459 !important;
   		}
 
+  	}
+
+  	// portfolio list
+
+  	ul.portfolio-list {
+  		margin-top: 40px;
+  		height: auto;
+
+  		li {
+  			margin-bottom: 88px;
+  			display: block;
+  			float: none;
+  			width: auto;
+  			height: auto;
+  			overflow: hidden;
+
+  			img {
+  				margin-right: 20px;
+  				float: left;
+  				display: block;
+  				width: 47px;
+  				height: 55px;
+  			}
+
+  			p {
+  				margin: 0;
+  				padding: 0;
+  				width: auto;
+  				height: auto;
+  				float: none;
+  				display: block;
+  				font: 14 'robotoregular';
+  				color: @black;
+  			}
+
+  			span {
+  				float: none;
+  				display: block;
+  				font: 20px 'robotomedium';
+  				color: @blue-dark;
+  			}
+
+  		}
+
+  	}
+
+  	// mask
+
+  	.works-mask {
+  		width: 514px;
+  		height: 460px;
+  		position: absolute;
+  		background: url('../img/works-mask.png') no-repeat;
+  		z-index: 33;
   	}
 
 }

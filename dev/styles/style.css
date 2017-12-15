@@ -457,6 +457,88 @@ a {
   }
 }
 @media only screen and (min-width: 1100px) {
+  .advantages {
+    height: auto;
+    background: url('../img/advantages.jpg') no-repeat center;
+    background-size: cover;
+  }
+  .advantages__list {
+    margin-top: 50px;
+    height: auto;
+  }
+  .advantages__list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+  }
+  .advantages__list ul li {
+    margin-bottom: 100px;
+    float: left;
+    width: 500px;
+    height: auto;
+    list-style: 0 !important;
+  }
+  .advantages__list ul li img {
+    margin-right: 20px;
+    display: block;
+    float: left;
+    width: 70px;
+    height: 68px;
+  }
+  .advantages__list ul li span {
+    font: 18px 'robotomedium';
+    color: #1b3459;
+  }
+  .advantages__list ul li p {
+    width: 80%;
+    float: left;
+    font: 18px 'robotolight';
+    color: #4e4e4e;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1100px) {
+  .advantages {
+    height: auto;
+    background: url('../img/advantages.jpg') no-repeat center;
+    background-size: cover;
+  }
+  .advantages__list {
+    margin-top: 50px;
+    height: auto;
+  }
+  .advantages__list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+  }
+  .advantages__list ul li {
+    margin-bottom: 50px;
+    float: none;
+    width: auto;
+    height: auto;
+    list-style: 0 !important;
+    text-align: center;
+  }
+  .advantages__list ul li img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: block;
+    float: none;
+    width: 70px;
+    height: 68px;
+  }
+  .advantages__list ul li span {
+    font: 18px 'robotomedium';
+    color: #1b3459;
+  }
+  .advantages__list ul li p {
+    width: auto;
+    float: nona;
+    font: 18px 'robotolight';
+    color: #4e4e4e;
+  }
+}
+@media only screen and (min-width: 1100px) {
   .block-begin {
     padding-top: 80px;
     padding-bottom: 66px;
@@ -931,6 +1013,57 @@ a {
     width: auto;
   }
 }
+@media only screen and (min-width: 1100px) {
+  .main-screen {
+    margin-top: 90px;
+    position: relative;
+    height: 597px;
+    height: auto;
+  }
+  .main-screen__fake-preview {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 597px;
+    z-index: 999;
+  }
+  .main-screen__fake-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .main-screen__video-frame {
+    margin: 40px 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1100px) {
+  .main-screen {
+    margin-top: 20px;
+    position: relative;
+    height: auto;
+  }
+  .main-screen__fake-preview {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 240px;
+    z-index: 999;
+    background: url('../img/main-screen.jpg') no-repeat center;
+    background-size: cover;
+  }
+  .main-screen__fake-preview img {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  .main-screen__video-frame {
+    margin: 10px 0 20px 0;
+  }
+  .main-screen__video-frame iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 1100px) {
   .header {
     position: inherit;
@@ -1098,57 +1231,6 @@ a {
   .container-small {
     width: 1040px;
     overflow: hidden;
-  }
-}
-@media only screen and (min-width: 1100px) {
-  .main-screen {
-    margin-top: 90px;
-    position: relative;
-    height: 597px;
-    height: auto;
-  }
-  .main-screen__fake-preview {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 597px;
-    z-index: 999;
-  }
-  .main-screen__fake-preview img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .main-screen__video-frame {
-    margin: 40px 0;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 1100px) {
-  .main-screen {
-    margin-top: 20px;
-    position: relative;
-    height: auto;
-  }
-  .main-screen__fake-preview {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 240px;
-    z-index: 999;
-    background: url('../img/main-screen.jpg') no-repeat center;
-    background-size: cover;
-  }
-  .main-screen__fake-preview img {
-    display: none;
-    width: 100%;
-    height: auto;
-  }
-  .main-screen__video-frame {
-    margin: 10px 0 20px 0;
-  }
-  .main-screen__video-frame iframe {
-    width: 100%;
-    height: 200px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1100px) {
@@ -1418,14 +1500,55 @@ a {
   .works-controls_here a:hover {
     background: #1b3459 !important;
   }
+  ul.portfolio-list {
+    margin-top: 40px;
+    height: auto;
+  }
+  ul.portfolio-list li {
+    margin-bottom: 88px;
+    display: block;
+    float: none;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  ul.portfolio-list li img {
+    margin-right: 20px;
+    float: left;
+    display: block;
+    width: 47px;
+    height: 55px;
+  }
+  ul.portfolio-list li p {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    float: none;
+    display: block;
+    font: 14 'robotoregular';
+    color: #000;
+  }
+  ul.portfolio-list li span {
+    float: none;
+    display: block;
+    font: 20px 'robotomedium';
+    color: #1b3459;
+  }
 }
 @media only screen and (min-width: 1100px) {
+  .portfolio-bg {
+    height: auto;
+    background: url('/img/portfolio-bg.jpg') no-repeat center;
+    width: 100%;
+  }
   .portfolio {
     padding-top: 80px;
     padding-bottom: 80px;
     width: 1040px;
     margin: 0 auto;
     height: auto;
+    overflow: hidden;
   }
   .title-block__line {
     margin: 0 auto;
@@ -1701,6 +1824,48 @@ a {
   .works-controls_here a,
   .works-controls_here a:hover {
     background: #1b3459 !important;
+  }
+  ul.portfolio-list {
+    margin-top: 40px;
+    height: auto;
+  }
+  ul.portfolio-list li {
+    margin-bottom: 88px;
+    display: block;
+    float: none;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  ul.portfolio-list li img {
+    margin-right: 20px;
+    float: left;
+    display: block;
+    width: 47px;
+    height: 55px;
+  }
+  ul.portfolio-list li p {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    float: none;
+    display: block;
+    font: 14 'robotoregular';
+    color: #000;
+  }
+  ul.portfolio-list li span {
+    float: none;
+    display: block;
+    font: 20px 'robotomedium';
+    color: #1b3459;
+  }
+  .works-mask {
+    width: 514px;
+    height: 460px;
+    position: absolute;
+    background: url('../img/works-mask.png') no-repeat;
+    z-index: 33;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1100px) {
@@ -2044,88 +2209,6 @@ a {
     width: 440px;
     height: 240px;
     background: url('../img/relief.jpg') no-repeat;
-  }
-}
-@media only screen and (min-width: 1100px) {
-  .advantages {
-    height: auto;
-    background: url('../img/advantages.jpg') no-repeat center;
-    background-size: cover;
-  }
-  .advantages__list {
-    margin-top: 50px;
-    height: auto;
-  }
-  .advantages__list ul {
-    margin: 0;
-    padding: 0;
-    list-style: none !important;
-  }
-  .advantages__list ul li {
-    margin-bottom: 100px;
-    float: left;
-    width: 500px;
-    height: auto;
-    list-style: 0 !important;
-  }
-  .advantages__list ul li img {
-    margin-right: 20px;
-    display: block;
-    float: left;
-    width: 70px;
-    height: 68px;
-  }
-  .advantages__list ul li span {
-    font: 18px 'robotomedium';
-    color: #1b3459;
-  }
-  .advantages__list ul li p {
-    width: 80%;
-    float: left;
-    font: 18px 'robotolight';
-    color: #4e4e4e;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 1100px) {
-  .advantages {
-    height: auto;
-    background: url('../img/advantages.jpg') no-repeat center;
-    background-size: cover;
-  }
-  .advantages__list {
-    margin-top: 50px;
-    height: auto;
-  }
-  .advantages__list ul {
-    margin: 0;
-    padding: 0;
-    list-style: none !important;
-  }
-  .advantages__list ul li {
-    margin-bottom: 50px;
-    float: none;
-    width: auto;
-    height: auto;
-    list-style: 0 !important;
-    text-align: center;
-  }
-  .advantages__list ul li img {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    display: block;
-    float: none;
-    width: 70px;
-    height: 68px;
-  }
-  .advantages__list ul li span {
-    font: 18px 'robotomedium';
-    color: #1b3459;
-  }
-  .advantages__list ul li p {
-    width: auto;
-    float: nona;
-    font: 18px 'robotolight';
-    color: #4e4e4e;
   }
 }
 /*
