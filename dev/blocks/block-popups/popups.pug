@@ -2,38 +2,48 @@
 
 // call expert
 
+.popup.call-expert
 
+	h4
+		| Вызвать замерщика
 
-h4
-	| Вызвать замерщика
+	p
+		| Для того чтобы узнаит точную стоимость работ пригласите нашего замерщика БЕСПЛАТНО:- Он приедет в удобное Вам время- Произведет все необходимые замеры- Проконсультирует Вас по всем вопросам
 
-p
-	| Для того чтобы узнаит точную стоимость работ пригласите нашего замерщика БЕСПЛАТНО:- Он приедет в удобное Вам время- Произведет все необходимые замеры- Проконсультирует Вас по всем вопросам
-
-form(action="/" method="post")
-	input(type="text" placeholder="Введите Ваше имя")
-	input(type="text" placeholder="Введите Ваш телефон")
-	input(type="submit" value="Вызвать замерщика")
+	form(action="/" method="post")
+		input(type="text" placeholder="Введите Ваше имя")
+		input(type="text" placeholder="Введите Ваш телефон")
+		input(type="submit" value="Вызвать замерщика")
 
 // Заказать звонок (Оставить заявку, консультация менеджера)
 
-h4
-	| Заказать звонок
+.popup.manager-consultation
 
-form(action="/" method="post")
-	input(type="text" placeholder="Введите Ваше имя")
-	input(type="text" placeholder="Введите Ваш телефон")
-	input(type="submit" value="Заказать")
+	h4
+		| Заказать звонок
+
+	form(action="/" method="post")
+		input(type="text" placeholder="Введите Ваше имя")
+		input(type="text" placeholder="Введите Ваш телефон")
+		input(type="submit" value="Заказать")
 
 // Сделайте заказ (для акций)
 
-h4
-	| Сделайте заказ
+.popup.make-an-order
 
-p
-	| прямо сейчас
+	h4
+		| Сделайте заказ
 
-form(action="/" method="post")
-	input(type="text" placeholder="Введите Ваше имя")
-	input(type="text" placeholder="Введите Ваш телефон")
-	input(type="submit" value="Перезвоните мне")
+	p
+		| прямо сейчас
+
+	form(action="/" method="post")
+		input(type="text" placeholder="Введите Ваше имя")
+		input(type="text" placeholder="Введите Ваш телефон")
+		input(type="submit" value="Перезвоните мне")
+
+// thanks
+
+.popup.popup-thanks
+	p
+		| Спасибо! Ваша заявка успешно отравлена!
