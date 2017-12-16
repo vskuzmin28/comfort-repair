@@ -42,7 +42,7 @@ $('.call-expert, .manager-consultation, .make-an-order, .popup-thanks').hide();
 $('.send-form').submit(function() {
       $.post($(this).attr('action'), $(this).serialize(), function(res) {         
      if (res.success == 1) {
-         $('.call-expert, .manager-consultation, .make-an-order, .popup-thanks').bPopup().close();
+         $('.call-expert, .manager-consultation, .make-an-order').bPopup().close();
            $('.popup-thanks').bPopup({
              closeClass:'сlose',
                  amsl: 0
