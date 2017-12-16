@@ -6,32 +6,50 @@ $('.main-screen__fake-preview').click(function(e){
   $('.main-screen__fake-preview').hide();
 })
 
-
-
 // call popup
 
-$('.call').click(function(){
-  event.preventDefault();
-  $('.popup-call').bPopup({
-    closeClass:'icon__close',
+$('.link-call-expert').click(function(e){
+  e.preventDefault();
+  $('.call-expert').bPopup({
+    closeClass:'popup__icon-close',
       amsl: 0,
       positionStyle: 'fixed',
-    }); 
-});
+    })
+})
+
+$('.link-manager-consultation').click(function(e){
+  e.preventDefault();
+  $('.manager-consultation').bPopup({
+    closeClass:'popup__icon-close',
+      amsl: 0,
+      positionStyle: 'fixed',
+    })
+})
+
+$('.link-make-an-order').click(function(e){
+  e.preventDefault();
+  $('.make-an-order').bPopup({
+    closeClass:'popup__icon-close',
+      amsl: 0,
+      positionStyle: 'fixed',
+    })
+})
 
 // functional call form
+
+$('.call-expert, .manager-consultation, .make-an-order, .popup-thanks').hide();
 
 $('.send-form').submit(function() {
       $.post($(this).attr('action'), $(this).serialize(), function(res) {         
      if (res.success == 1) {
-         $('#rise').bPopup().close();
-           $('#okthanks').bPopup({
-             closeClass:'СЃlose',
+         $('.call-expert, .manager-consultation, .make-an-order, .popup-thanks').bPopup().close();
+           $('.popup-thanks').bPopup({
+             closeClass:'сlose',
                  amsl: 0
-            });
-           setTimeout(function(){$('#okthanks').bPopup().close();}, 3000);
+            })
+           setTimeout(function(){$('.popup-thanks').bPopup().close();}, 3000);
        }else{
-       alert(res.text);
+       alert(res.text)
        }
     }, 'json');
     return false;
@@ -43,7 +61,7 @@ var easeInQuad = new SmoothScroll('[data-easing="easeInQuad"]', {easing: 'easeIn
 
 // wow animate elements
 
-new WOW().init();
+new WOW().init()
 
 // sliders
 
@@ -56,7 +74,7 @@ $('.portfolio-block').responsiveSlides({
   speed: 500,
   maxwidth: 1040,
   //namespace: "centered-controls"
-});
+})
 
 // works
 
@@ -67,7 +85,7 @@ $('.works-block').responsiveSlides({
   speed: 500,
   maxwidth: 514,
   namespace: "works-controls"
-});
+})
 
 // actions
 
@@ -78,7 +96,7 @@ $('.actions-block').responsiveSlides({
   speed: 500,
   maxwidth: 1040,
   //namespace: "centered-controls"
-});
+})
 
 // reviews
 
@@ -89,7 +107,7 @@ $('.reviews-block').responsiveSlides({
   speed: 500,
   maxwidth: 1040,
   //namespace: "centered-controls"
-});
+})
 
 // view full review in slider
 

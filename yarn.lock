@@ -1862,6 +1862,13 @@ gulp-imagemin@^3.3.0:
     imagemin-optipng "^5.1.0"
     imagemin-svgo "^5.1.0"
 
+gulp-less-import@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-less-import/-/gulp-less-import-1.0.0.tgz#5cb9c392d71c3ffb7304aa219f6009113a01d1ac"
+  dependencies:
+    gulp-util "^3.0.3"
+    through2 "^0.6.3"
+
 gulp-less@^3.3.0:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/gulp-less/-/gulp-less-3.3.2.tgz#f6636adcc66150a8902719fa59963fc7f862a49a"
@@ -1927,7 +1934,7 @@ gulp-util@^2.2.14:
     through2 "^0.5.0"
     vinyl "^0.2.1"
 
-gulp-util@^3.0.0, gulp-util@^3.0.1, gulp-util@^3.0.2, gulp-util@^3.0.7, gulp-util@^3.0.8, gulp-util@~3.0.8:
+gulp-util@^3.0.0, gulp-util@^3.0.1, gulp-util@^3.0.2, gulp-util@^3.0.3, gulp-util@^3.0.7, gulp-util@^3.0.8, gulp-util@~3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.8.tgz#0054e1e744502e27c04c187c3ecc505dd54bbb4f"
   dependencies:
@@ -4577,7 +4584,7 @@ through2@^0.5.0:
     readable-stream "~1.0.17"
     xtend "~3.0.0"
 
-through2@^0.6.0, through2@^0.6.1:
+through2@^0.6.0, through2@^0.6.1, through2@^0.6.3:
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/through2/-/through2-0.6.5.tgz#41ab9c67b29d57209071410e1d7a7a968cd3ad48"
   dependencies:
