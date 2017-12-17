@@ -36,4 +36,74 @@
 
 	}
 
+	.main-screen__fake-preview__content {
+		position: absolute;
+		width: 100%;
+		height: 597px;
+		//background: #f00;
+
+		h2 {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font: 22px 'robotoregular';
+			color: #1b3459;
+			text-transform: uppercase;
+		}
+
+		span {
+			display: inline-block;
+			padding: 5px;
+			background: #1b3459;
+			font: 14px 'robotoregular';
+			color: @white;
+		}
+
+		h4 {
+			display: none;
+			padding-top: 12px;
+			margin-top: 20px;
+			padding-right: 40px;
+			background: 0;
+			font: 14px 'beer_moneyregular';
+			color: #1b3459;
+		}
+
+	}
+
+	.main-screen__fake-preview__content__icon-play {
+		display: block;
+		width: 31px;
+		height: 31px;
+		margin: 0 auto;
+		margin-top: -85px;
+
+		img {
+			display: block;
+			width: 31px;
+			height: 31px;
+
+			&:hover {
+				transform: rotate(360deg);
+			}
+
+		}
+
+	}
+
+	.main-screen__fake-preview__content__boss {
+		display: none;
+		float: left;
+		margin-top: 60px;
+
+		p {
+			text-align: left;
+			font: 12px 'robotoregular';
+			line-height: 10px !important;
+			color: @black;
+
+			text-shadow: 0;
+		}
+
+	}
+
 }

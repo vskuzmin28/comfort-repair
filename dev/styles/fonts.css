@@ -94,3 +94,12 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'beer_moneyregular';
+    src: url('../fonts/beer_money.woff2') format('woff2'),
+         url('../fonts/beer_money.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
