@@ -87,13 +87,20 @@
 		}
 
 		&:hover, .list li:hover & {
-			-moz-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+      		transform: rotate(45deg);
+      		-ms-transform: rotate(45deg);
+  			-moz-transform: rotate(45deg);
+			//-moz-transform: rotate(45deg);
 			background: @blue-dark;
 
 			line-height: 90px;
 
 			span {
-				-moz-transform: rotate(-45deg);
+				-webkit-transform: rotate(-45deg);
+      			transform: rotate(-45deg);
+      			-ms-transform: rotate(-45deg);
+  				-moz-transform: rotate(-45deg);
 				font: 50px 'robotobold';
 				color: @white;
 			}

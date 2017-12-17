@@ -1,0 +1,614 @@
+.calc
+
+	// container
+
+	.container.container-small
+
+		.row
+
+			.col-xs-12.col-md-1
+
+			.col-xs-12.col-md-10
+
+				h3
+					| Калькулятор стоимости ремонта
+
+				form(action="/" method="post")
+
+					// block
+
+					.calc__block
+
+						// text information
+
+						.calc__block__text-info
+							p
+								| Скидочный блок: 
+
+							p
+								| Вы экономите время наших менеджеров, поэтому за каждый Ваш ответ вы получите большую скидку на итоговые работы.
+
+							p
+								| Итого скидка
+						
+							p
+								| N%
+
+						// options
+
+						.calc__block__option
+
+							h4
+								| Что будем ремонтировать?
+
+							label.calc__block__option__label
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| Квартира
+
+							label.calc__block__option__label
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| Загородный дом
+
+							a.button-blue(href="#" title="")
+								| Далее >>
+
+					// block
+
+					.calc__block
+
+						// text information
+
+						.calc__block__text-info
+							p
+								| Скидочный блок: 
+
+							p
+								| Вы экономите время наших менеджеров, поэтому за каждый Ваш ответ вы получите большую скидку на итоговые работы.
+
+							p
+								| Итого скидка
+						
+							p
+								| N%
+
+						// options
+
+						.calc__block__option
+
+							h4
+								| Каково состояние помещений?
+
+							label.calc__block__option__label
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| Бетонные стены
+
+							label.calc__block__option__label
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| Всё готово под читовую отделку
+
+							label.calc__block__option__label
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| Старый ремонт
+
+							a.button-blue(href="#" title="")
+								| Далее >>
+
+					// block
+
+					.calc__block
+
+						// text information
+
+						.calc__block__text-info
+							p
+								| Скидочный блок: 
+
+							p
+								| Вы экономите время наших менеджеров, поэтому за каждый Ваш ответ вы получите большую скидку на итоговые работы.
+
+							p
+								| Итого скидка
+						
+							p
+								| N%
+
+						// options
+
+						.calc__block__option
+
+							h4
+								| Укажите общую площадь
+
+							.calc__block__option__input-text.calc__block__option__input-text-mb
+								input(type="text" placeholder="Общая площадь: 20м²")
+
+							a.button-blue(href="#" title="")
+								| Далее >>
+
+					// block
+
+					.calc__block
+
+						// text information
+
+						.calc__block__text-info
+							p
+								| Скидочный блок: 
+
+							p
+								| Вы экономите время наших менеджеров, поэтому за каждый Ваш ответ вы получите большую скидку на итоговые работы.
+
+							p
+								| Итого скидка
+						
+							p
+								| N%
+
+						// options
+
+						.calc__block__option
+
+							h4
+								| Сколько у вас комнат?
+
+							label.calc__block__option__label.calc__block__option__label-left
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| Студия
+
+							label.calc__block__option__label.calc__block__option__label-left
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| 3 комнаты
+
+							label.calc__block__option__label.calc__block__option__label-left
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| 1 комната
+
+							label.calc__block__option__label.calc__block__option__label-left
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| 4 комната
+
+							label.calc__block__option__label.calc__block__option__label-left
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| 2 комната
+
+							label.calc__block__option__label.calc__block__option__label-left
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| 5 комната
+
+							a.button-blue(href="#" title="")
+								| Далее >>
+
+					// block
+
+					.calc__block
+
+						// text information
+
+						.calc__block__text-info
+							p
+								| Скидочный блок: 
+
+							p
+								| Вы экономите время наших менеджеров, поэтому за каждый Ваш ответ вы получите большую скидку на итоговые работы.
+
+							p
+								| Итого скидка
+						
+							p
+								| N%
+
+						// options
+
+						.calc__block__option
+
+							h4
+								| Каково состояние помещений?
+
+							.calc__block__options__select
+								select
+									option
+										| Пол
+									option
+										| 1
+									option
+										| 2
+
+							.calc__block__options__select
+								select
+									option
+										| Стены
+									option
+										| 1
+									option
+										| 2
+
+							.calc__block__options__select
+								select
+									option
+										| Потолок
+									option
+										| 1
+									option
+										| 2
+
+							// string
+
+							.calc__block__options__string
+
+								p
+									| Тёплый пол:
+
+								label.calc__block__option__label.calc__block__option__label-left
+									input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+									span.checkbox-custom
+									span.label-custom
+										| Да
+
+								label.calc__block__option__label.calc__block__option__label-left
+									input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+									span.checkbox-custom
+									span.label-custom
+										| Нет
+
+							a.button-blue(href="#" title="")
+								| Далее >>
+
+					// block
+
+					.calc__block
+
+						// text information
+
+						.calc__block__text-info
+							p
+								| Скидочный блок: 
+
+							p
+								| Вы экономите время наших менеджеров, поэтому за каждый Ваш ответ вы получите большую скидку на итоговые работы.
+
+							p
+								| Итого скидка
+						
+							p
+								| N%
+
+						// options
+
+						.calc__block__option
+
+							h4
+								| Как делаем сан. узлы?
+
+							.calc__block__option__input-text.calc__block__option__input-text-mb
+								input(type="text" placeholder="Площадь кухни м²")
+
+							.calc__block__options__select
+								select
+									option
+										| Пол
+									option
+										| 1
+									option
+										| 2
+
+							.calc__block__options__select
+								select
+									option
+										| Стены
+									option
+										| 1
+									option
+										| 2
+
+							.calc__block__options__select
+								select
+									option
+										| Потолок
+									option
+										| 1
+									option
+										| 2
+
+							// string
+
+							.calc__block__options__string
+
+								p
+									| Тёплый пол:
+
+								label.calc__block__option__label.calc__block__option__label-left
+									input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+									span.checkbox-custom
+									span.label-custom
+										| Да
+
+								label.calc__block__option__label.calc__block__option__label-left
+									input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+									span.checkbox-custom
+									span.label-custom
+										| Нет
+
+							a.button-blue(href="#" title="")
+								| Далее >>
+
+					// block
+
+					.calc__block
+
+						// text information
+
+						.calc__block__text-info
+							p
+								| Скидочный блок: 
+
+							p
+								| Вы экономите время наших менеджеров, поэтому за каждый Ваш ответ вы получите большую скидку на итоговые работы.
+
+							p
+								| Итого скидка
+						
+							p
+								| N%
+
+						// options
+
+						.calc__block__option
+
+							h4
+								| Как делаем кухню?
+
+							.calc__block__option__input-text.calc__block__option__input-text-mb
+								input(type="text" placeholder="Площадь кухни м²")
+
+							.calc__block__options__select
+								select
+									option
+										| Пол
+									option
+										| 1
+									option
+										| 2
+
+							.calc__block__options__select
+								select
+									option
+										| Стены
+									option
+										| 1
+									option
+										| 2
+
+							.calc__block__options__select
+								select
+									option
+										| Потолок
+									option
+										| 1
+									option
+										| 2
+
+							// string
+
+							.calc__block__options__string
+
+								p
+									| Тёплый пол:
+
+								label.calc__block__option__label.calc__block__option__label-left
+									input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+									span.checkbox-custom
+									span.label-custom
+										| Да
+
+								label.calc__block__option__label.calc__block__option__label-left
+									input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+									span.checkbox-custom
+									span.label-custom
+										| Нет
+
+							a.button-blue(href="#" title="")
+								| Далее >>
+
+					// block
+
+					.calc__block
+
+						// text information
+
+						.calc__block__text-info
+							p
+								| Скидочный блок: 
+
+							p
+								| Вы экономите время наших менеджеров, поэтому за каждый Ваш ответ вы получите большую скидку на итоговые работы.
+
+							p
+								| Итого скидка
+						
+							p
+								| N%
+
+						// options
+
+						.calc__block__option
+
+							h4
+								| Как делаем первую комнату?
+
+							.calc__block__option__input-text.calc__block__option__input-text-mb
+								input(type="text" placeholder="Площадь комнаты м²")
+
+							.calc__block__options__select
+								select
+									option
+										| Пол
+									option
+										| 1
+									option
+										| 2
+
+							.calc__block__options__select
+								select
+									option
+										| Стены
+									option
+										| 1
+									option
+										| 2
+
+							.calc__block__options__select
+								select
+									option
+										| Потолок
+									option
+										| 1
+									option
+										| 2
+
+							// string
+
+							.calc__block__options__string
+
+								p
+									| Тёплый пол:
+
+								label.calc__block__option__label.calc__block__option__label-left
+									input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+									span.checkbox-custom
+									span.label-custom
+										| Да
+
+								label.calc__block__option__label.calc__block__option__label-left
+									input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+									span.checkbox-custom
+									span.label-custom
+										| Нет
+
+							a.button-blue(href="#" title="")
+								| Далее >>
+
+					// block
+
+					.calc__block
+
+						.calc__block__thanks
+
+							h5
+								| Благодарим Вас за ответы на все вопросы!
+
+							p
+								| Приблизительная стоимость Вашего ремонта составит:
+
+							span
+								| от 2 345 678 до 3 111 678 рублей
+
+							.calc__block__line
+
+							p
+								| Окончательная стоимость зависит от: <br/>- Состояния поверхностей помещения <br/>- Вариантов материалов чистовой отделки <br/>- Состояния и наличия базовой электрики <br/>- Прочих аспектов ремонта помещения <br/>
+
+							p
+								| Мы проконсультируем Вас обо всех нюансах и сможем окончательно определить стоимость работ.
+
+							a.button-blue(href="#" title="")
+								| Далее >>
+
+					// block
+
+					.calc__block
+
+						.calc__block__text
+
+							p
+								| Чтобы ваши ответы не пропадали даром и мы могли зафиксировать за Вами Вашу скидку введите  Ваш номер телефона.
+
+							p
+								| За Вашим номером зафиксируется скидка в размере n%
+
+							.calc__block__input
+								input(type="text" placeholder="Телефон")
+
+							a.button-blue(href="#" title="")
+								| Далее >>
+
+					// block
+
+					.calc__block
+
+						.calc__block__text
+
+							p
+								| Спасибо большое за обращение, данные по Вашему ремонту и скидка зафиксированы.
+
+							p
+								| С вами свяжется наш эксперт-технолог, чтобы  сориентировать по окончательной стоимости работ, а также дать консультацию по материалам. 
+
+
+						// text information
+
+						.calc__block__text-info
+							p
+								| Скидочный блок: 
+
+							p
+								| Вы экономите время наших менеджеров, поэтому за каждый Ваш ответ вы получите большую скидку на итоговые работы.
+
+							p
+								| Итого скидка
+						
+							p
+								| N%
+
+						// options
+
+						.calc__block__option.call-last-mt
+
+							h4
+								| В какое время вам удобно назначить замер?
+
+							label.calc__block__option__label
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| Сегодня
+
+							label.calc__block__option__label
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| На этой неделе
+
+							label.calc__block__option__label
+								input.calc__block__option__label__checkbox(type="checkbox" name="checkbox-test")
+								span.checkbox-custom
+								span.label-custom
+									| На следующей неделе
+									
+
+							a.button-blue(href="#" title="")
+								| Далее >>
+
+
+			.col-xs-12.col-md-1
